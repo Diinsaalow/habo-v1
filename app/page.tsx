@@ -89,36 +89,44 @@ export default function Home() {
       {/* About Section (modernized from legacy) */}
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-blue-600 font-semibold tracking-wide">About</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="lg:pr-8">
+              <p className="text-blue-600 font-semibold tracking-wide mb-2">
+                About
+              </p>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Habo Tuna Factory
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
+              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 We are a leading producer, distributor and marketer of
-                shelf-stable seafood products including white‑meat tuna,
+                shelf‑stable seafood products including white‑meat tuna,
                 sardines, mackerel and specialty seafood. Our factory is located
                 near the Gulf of Aden Sea, 60 km from Allula district in
                 Puntland State of Somalia.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-                <div className="bg-blue-50 rounded-lg p-5 text-center">
-                  <Award className="h-7 w-7 text-blue-600 mx-auto mb-2" />
-                  <p className="text-sm text-gray-700">International Quality</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="bg-blue-50 rounded-lg p-4 text-center hover:bg-blue-100 transition-colors">
+                  <Award className="h-6 w-6 text-blue-600 mx-auto mb-2" />
+                  <p className="text-sm font-medium text-gray-700">
+                    International Quality
+                  </p>
                 </div>
-                <div className="bg-green-50 rounded-lg p-5 text-center">
-                  <Globe className="h-7 w-7 text-green-600 mx-auto mb-2" />
-                  <p className="text-sm text-gray-700">Regional Exports</p>
+                <div className="bg-green-50 rounded-lg p-4 text-center hover:bg-green-100 transition-colors">
+                  <Globe className="h-6 w-6 text-green-600 mx-auto mb-2" />
+                  <p className="text-sm font-medium text-gray-700">
+                    Regional Exports
+                  </p>
                 </div>
-                <div className="bg-red-50 rounded-lg p-5 text-center">
-                  <Heart className="h-7 w-7 text-red-600 mx-auto mb-2" />
-                  <p className="text-sm text-gray-700">Health & Nutrition</p>
+                <div className="bg-red-50 rounded-lg p-4 text-center hover:bg-red-100 transition-colors">
+                  <Heart className="h-6 w-6 text-red-600 mx-auto mb-2" />
+                  <p className="text-sm font-medium text-gray-700">
+                    Health & Nutrition
+                  </p>
                 </div>
               </div>
             </div>
-            <div>
-              <div className="grid grid-cols-3 gap-4">
+            <div className="lg:pl-4">
+              <div className="grid grid-cols-3 gap-3">
                 {[
                   "/images/home/habo-home-2.png",
                   "/images/home/habo-home-3.png",
@@ -129,15 +137,15 @@ export default function Home() {
                 ].map((src, i) => (
                   <div
                     key={src}
-                    className={`relative aspect-[4/3] rounded-lg overflow-hidden ${
-                      i % 2 === 0 ? "mt-4" : ""
+                    className={`relative aspect-square rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow ${
+                      i % 2 === 0 ? "mt-6" : ""
                     }`}
                   >
                     <Image
                       src={src}
-                      alt="Habo tuna collage"
+                      alt="Habo tuna factory operations"
                       fill
-                      className="object-cover"
+                      className="object-cover hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 ))}
@@ -489,7 +497,7 @@ export default function Home() {
 
                 <div className="border-l-4 border-blue-500 pl-4">
                   <div className="text-lg font-semibold text-gray-900 mb-1">
-                    Ahmed Hassan Mohamed
+                    Abdiqani Yussuf
                   </div>
                   <div className="text-blue-600 font-medium mb-2">
                     Managing Director
@@ -500,14 +508,14 @@ export default function Home() {
                 </div>
 
                 {/* Additional credibility elements */}
-                <div className="mt-6 pt-6 border-t border-gray-100">
+                {/* <div className="mt-6 pt-6 border-t border-gray-100">
                   <div className="flex items-center text-sm text-gray-500">
                     <Award className="h-4 w-4 mr-2" />
                     <span>
                       Over 15 years of experience in seafood processing
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
