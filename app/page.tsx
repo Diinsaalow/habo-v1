@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       {/* About Section (modernized from legacy) */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div className="lg:pr-8">
@@ -208,7 +208,7 @@ export default function Home() {
       </section>
 
       {/* Product Highlights */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-gray-50 via-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
@@ -305,7 +305,7 @@ export default function Home() {
       </section>
 
       {/* Health, Nutrition, Convenience (mosaic) */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-blue-50/40 via-white to-indigo-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -314,7 +314,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Health */}
-            <div className="bg-gray-50 rounded-lg p-8 order-1">
+            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-8 order-1 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">Health</h3>
               <p className="text-gray-600">
                 Top-quality ingredients, omega‑3 rich and naturally high in
@@ -356,7 +356,7 @@ export default function Home() {
                 className="object-cover"
               />
             </div>
-            <div className="bg-gray-50 rounded-lg p-8 md:order-4 order-3">
+            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-8 md:order-4 order-3 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">Nutrition</h3>
               <p className="text-gray-600">
                 Tuna is 100% pure protein, while sardines give muscle the amino
@@ -385,7 +385,7 @@ export default function Home() {
             </div>
 
             {/* Convenience */}
-            <div className="bg-gray-50 rounded-lg p-8 order-5">
+            <div className="bg-white/70 backdrop-blur-sm rounded-lg p-8 order-5 shadow-sm">
               <h3 className="text-xl font-semibold mb-3">Convenience</h3>
               <p className="text-gray-600">
                 Shelf‑stable tins, ready to enjoy and easy to transport. Trusted
@@ -464,9 +464,9 @@ export default function Home() {
       </section>
 
       {/* Managing Director Testimonial */}
-      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-indigo-50/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               {/* Profile Image Side */}
               <div className="relative h-64 lg:h-full min-h-[400px] overflow-hidden">
@@ -530,7 +530,7 @@ export default function Home() {
       </section>
 
       {/* Contact Block */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>

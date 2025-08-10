@@ -149,7 +149,7 @@ export default function Factory() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-slate-50">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-24 overflow-hidden">
         <div className="absolute inset-0 bg-black/30"></div>
@@ -183,7 +183,7 @@ export default function Factory() {
       </section>
 
       {/* Factory Stats */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -201,7 +201,7 @@ export default function Factory() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="group">
-                <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 h-full border border-gray-200 hover:border-blue-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 h-full border border-gray-200 hover:border-blue-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 shadow-sm">
                   <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <div className="text-white">{stat.icon}</div>
                   </div>
@@ -222,7 +222,7 @@ export default function Factory() {
       </section>
 
       {/* Factory Highlights */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50/40 via-white to-indigo-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -240,7 +240,7 @@ export default function Factory() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {highlights.map((highlight, index) => (
               <div key={index} className="group">
-                <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 h-full border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 h-full border border-gray-200 hover:border-gray-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 shadow-sm">
                   <div className="flex items-start">
                     <div
                       className={`bg-gradient-to-br ${highlight.color} p-4 rounded-2xl mr-6 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
@@ -264,7 +264,7 @@ export default function Factory() {
       </section>
 
       {/* Production Process */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-gray-50 via-white to-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -297,7 +297,7 @@ export default function Factory() {
                       index % 2 === 0 ? "lg:pr-12" : "lg:pl-12"
                     }`}
                   >
-                    <div className="group bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-200 hover:border-purple-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+                    <div className="group bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-gray-200 hover:border-purple-300 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 shadow-sm">
                       <div className="flex items-center mb-6">
                         <div
                           className={`bg-gradient-to-br ${step.color} text-white w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-bold group-hover:scale-110 transition-transform duration-300 shadow-lg mr-6`}
@@ -385,7 +385,7 @@ export default function Factory() {
       </section>
 
       {/* Photo Gallery Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-blue-50/40 via-white to-indigo-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -403,7 +403,7 @@ export default function Factory() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {galleryItems.map((item, index) => (
               <div key={index} className="group">
-                <div className="bg-white rounded-2xl h-80 relative overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-200">
+                <div className="bg-white/80 backdrop-blur-sm rounded-2xl h-80 relative overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 border border-gray-200 shadow-sm">
                   {/* Background Image */}
                   <div className="absolute inset-0">
                     <Image
@@ -488,7 +488,7 @@ export default function Factory() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
             <Star className="h-4 w-4 mr-2" />
