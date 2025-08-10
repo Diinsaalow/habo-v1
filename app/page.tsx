@@ -12,7 +12,6 @@ import {
   Phone,
   Quote,
   CheckCircle,
-  X,
 } from "lucide-react";
 
 export default function Home() {
