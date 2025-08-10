@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -19,27 +20,27 @@ export default function Home() {
     {
       label: "Registration Certificate",
       file: "/assets/home/habotuna-certification-of-registration.pdf",
-      thumbnail: "/images/home/habo-home-1.png", // Using existing image as placeholder
+      thumbnail: "/certificates/habotuna-certification-of-registration.png  ", // Using existing image as placeholder
     },
     {
       label: "Dubai Test Report",
       file: "/assets/home/habotuna-dubai-test-report.pdf",
-      thumbnail: "/images/home/habo-home-2.png", // Using existing image as placeholder
+      thumbnail: "/certificates/habotuna-dubai-test-report.png", // Using existing image as placeholder
     },
     {
       label: "Ethiopia Test Report",
       file: "/assets/home/habotuna-ethopia-test-report.pdf",
-      thumbnail: "/images/home/habo-home-3.png", // Using existing image as placeholder
+      thumbnail: "/certificates/habotuna-ethopia-test-report.png", // Using existing image as placeholder
     },
     {
       label: "Oman Test Report",
       file: "/assets/home/habotuna-oman-test-report.pdf",
-      thumbnail: "/images/home/habo-home-4.png", // Using existing image as placeholder
+      thumbnail: "/certificates/habotuna-oman-test-report.png", // Using existing image as placeholder
     },
     {
       label: "SGS Test Report",
       file: "/assets/home/habotuna-sgs-test-report.pdf",
-      thumbnail: "/images/home/habo-home-5.png", // Using existing image as placeholder
+      thumbnail: "/certificates/habotuna-sgs-test-report.png", // Using existing image as placeholder
     },
   ];
 
@@ -431,7 +432,13 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {certificates.map((cert) => (
-              <div key={cert.file} className="group cursor-pointer">
+              <div
+                key={cert.file}
+                className="group cursor-pointer"
+                onClick={() => window.open(cert.file, "_blank")}
+                role="button"
+                tabIndex={0}
+              >
                 <div className="relative aspect-[3/4] rounded-lg overflow-hidden bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
                   <Image
                     src={cert.thumbnail}

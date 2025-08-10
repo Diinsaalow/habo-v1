@@ -292,9 +292,9 @@ export default function Products() {
                     }`}
                   >
                     <div className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 border border-gray-200 shadow-lg">
-                      <div className="flex items-center mb-6">
+                      <div className="flex flex-col sm:flex-row items-start sm:items-center mb-6">
                         <div
-                          className={`p-4 rounded-2xl bg-gradient-to-br ${colors.gradient} mr-6 overflow-hidden`}
+                          className={`p-4 rounded-2xl bg-gradient-to-br ${colors.gradient} mb-4 sm:mb-0 sm:mr-6 overflow-hidden`}
                         >
                           <Image
                             src={product.image}
@@ -304,8 +304,8 @@ export default function Products() {
                             className="w-12 h-12 object-cover rounded-xl"
                           />
                         </div>
-                        <div>
-                          <h2 className="text-4xl font-bold text-gray-900 mb-2">
+                        <div className="flex-1 min-w-0">
+                          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 break-words">
                             {product.name}
                           </h2>
                           <span

@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "Leading producer and distributor of premium seafood products including white-meat tuna, sardines, and mackerel. Located in Bosaso, Puntland State, Somalia.",
   keywords:
     "tuna, seafood, sardines, mackerel, Somalia, Bosaso, fish factory, canned fish, omega-3",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

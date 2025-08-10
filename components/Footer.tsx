@@ -1,5 +1,6 @@
-import Link from 'next/link';
-import { Fish, Mail, Phone, MapPin } from 'lucide-react';
+import Link from "next/link";
+import { Fish, Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -9,14 +10,17 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Fish className="h-8 w-8 text-blue-400" />
-              <div>
-                <h2 className="text-xl font-bold">Habo Tuna</h2>
-                <p className="text-sm text-blue-400">Factory</p>
-              </div>
+              <Image
+                src="/favicon.png"
+                alt="Habo Tuna Factory"
+                width={32}
+                height={32}
+              />
+              <h2 className="text-xl font-bold">Habo Tuna</h2>
             </div>
             <p className="text-gray-300 mb-4">
-              The tastiest fish in town! Leading producer and distributor of premium seafood products.
+              The tastiest fish in town! Leading producer and distributor of
+              premium seafood products.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
@@ -38,10 +42,38 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><Link href="/about" className="text-gray-300 hover:text-blue-400 transition-colors">About Us</Link></li>
-              <li><Link href="/products" className="text-gray-300 hover:text-blue-400 transition-colors">Our Products</Link></li>
-              <li><Link href="/factory" className="text-gray-300 hover:text-blue-400 transition-colors">Factory</Link></li>
-              <li><Link href="/contact" className="text-gray-300 hover:text-blue-400 transition-colors">Contact</Link></li>
+              <li>
+                <Link
+                  href="/about"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/products"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Our Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/factory"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Factory
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/contact"
+                  className="text-gray-300 hover:text-blue-400 transition-colors"
+                >
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -49,9 +81,15 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Products</h3>
             <ul className="space-y-2">
-              <li><span className="text-gray-300">White-meat Tuna</span></li>
-              <li><span className="text-gray-300">Sardines</span></li>
-              <li><span className="text-gray-300">Mackerel</span></li>
+              <li>
+                <span className="text-gray-300">White-meat Tuna</span>
+              </li>
+              <li>
+                <span className="text-gray-300">Sardines</span>
+              </li>
+              <li>
+                <span className="text-gray-300">Mackerel</span>
+              </li>
             </ul>
           </div>
 
@@ -84,10 +122,16 @@ const Footer = () => {
               © 2010 - 2025 Habo Tuna Factory. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link href="/privacy" className="text-gray-300 hover:text-blue-400 text-sm transition-colors">
+              <Link
+                href="/privacy"
+                className="text-gray-300 hover:text-blue-400 text-sm transition-colors"
+              >
                 Privacy Policy
               </Link>
-              <Link href="/disclaimer" className="text-gray-300 hover:text-blue-400 text-sm transition-colors">
+              <Link
+                href="/disclaimer"
+                className="text-gray-300 hover:text-blue-400 text-sm transition-colors"
+              >
                 Disclaimer
               </Link>
             </div>
